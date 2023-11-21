@@ -1,0 +1,22 @@
+Lambda Code:
+import json
+
+def lambda_handler(event, context):
+    numbers =event['numbers']
+    a=numbers['number_1']
+    b=numbers['number_2']
+    #Concatenate lists a and b to create c
+    c=a+b
+    print(c)
+    return {
+        'statusCode': 200,
+        'body': json.dumps(c)
+    }
+
+Event json
+{
+  "numbers": {
+      "number_1": 10,
+      "number_2": 20
+  }
+}

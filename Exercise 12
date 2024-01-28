@@ -1,0 +1,17 @@
+# List Ends
+# Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes a new list of only the first and last elements of the given list.
+
+def list_ends(input_list):
+    
+    #if not input_list:
+        #return "Input list is empty."
+
+    result_list = [input_list[0], input_list[-1]]
+
+    return result_list
+
+input_list = [5, 10, 15, 20, 25]
+output_list = list_ends(input_list)
+
+print("Original List:", input_list)
+print("New List:", output_list)
